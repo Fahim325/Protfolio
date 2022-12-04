@@ -1,0 +1,238 @@
+/* comon css start */
+:root{
+    --themecolor: #332FD0;
+    --white:#ffff;
+    --green:green;
+    --yellow:yellow;
+    
+
+    --family: 'Jost', sans-serif;
+    
+    
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+ul,li,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+img {
+    vertical-align: middle;
+}
+
+.img-fluld {
+    max-width: 100%;
+    height: auto;
+}
+.w-50 {
+    width: 71%!important;
+} 
+/* comon css start */
+
+/* comon css start */
+.preloaderDiv{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 9999;
+    /* transition: all .2s linear; */
+  }
+  
+  .preloaderDiv .left{
+    width: 50%;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all linear .3s;
+    animation-name: left;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease 0s;
+    animation-delay: 3s;
+  }
+  .animation_line{
+    width: 2px;
+    height: 0;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    animation-name: line;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease 0s;
+  }
+  @keyframes line {
+    0%{
+      height: 0%;
+    }
+    30%{
+      height: 30%;
+    }
+    80%{
+      height: 35%;
+      background: #000000;
+    }
+    100%{
+      height: 99%;
+      background: #1b243081;
+    }
+  }
+  
+  @keyframes left {
+    0%{
+      width: 50%;
+    }
+    100%{
+      width: 00%;
+    }
+  }
+  @keyframes right {
+    0%{
+      width: 50%;
+    }
+    100%{
+      width: 0%;
+    }
+  }
+  .preloaderDiv .right{
+    width: 50%;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transition: all linear .3s;
+    animation-name: right;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease 0s;
+    animation-delay: 3s;
+  }
+/* comon css start */
+/* nav start */
+#navebar{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    
+    padding: 15px 0;
+}
+
+.main_manu {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo {
+
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}.main_manu li{
+    margin: 0 8px;
+}
+.main_manu li a{
+    color: var(--white);
+}
+.main_manu li a:hover{
+    color: var(--themecolor);
+}
+.download a{
+
+    padding: 14px 26px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: var(--themecolor);
+    font-family: var(--family);
+    border: 2px solid var(--themecolor);
+    background: transparent;
+}
+/* nav end */
+/* ban start */
+#banner{
+    background: url(../img/background-2426328__340.webp)  no-repeat center/cover ;
+    padding-top: 145px;
+    padding-bottom: 43px;
+    
+    
+}
+.banner_info{
+
+}
+.banner_info h4{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: var(--family);
+    color: var(--themecolor);
+}
+.banner_info h1{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: var(--family);
+    color: var(--white);
+    margin-bottom: 50px;
+}
+.banner_info h5{
+    font-size: 19px;
+    font-weight: 400;
+    font-family: var(--family);
+    color: var(--white);
+    margin-bottom: 30px;
+}
+.banner_info h5 .green{
+    
+    color: var(--green);
+    
+}
+.banner_info h5 .yellow{
+    
+    color: var(--yellow);
+    
+}
+.banner_info p{
+    color: var(--white);
+}
+.banner_info .banner_btn{}
+.banner_info .banner_btn .about_me{}
+.banner_info .banner_btn span a{}
+/* .picture{
+    height: 500px;
+    width: 500px;
+} */
+/* ban end */
+
+
